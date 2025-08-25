@@ -5,34 +5,6 @@ import { useUiStore } from './ui'
 export const useTasksStore = defineStore('tasks', () => {
   // State
   const tasks = ref([
-    // Datos de ejemplo para empezar
-    {
-      id: '1',
-      title: 'Completar el proyecto Vue',
-      description: 'Terminar la aplicación de gestión de tareas',
-      priority: 'high',
-      completed: false,
-      createdAt: new Date('2024-01-15'),
-      updatedAt: new Date('2024-01-15')
-    },
-    {
-      id: '2',
-      title: 'Estudiar TailwindCSS',
-      description: 'Aprender más sobre utilidades de Tailwind',
-      priority: 'medium',
-      completed: true,
-      createdAt: new Date('2024-01-14'),
-      updatedAt: new Date('2024-01-14')
-    },
-    {
-      id: '3',
-      title: 'Hacer ejercicio',
-      description: 'Ir al gimnasio por 1 hora',
-      priority: 'low',
-      completed: false,
-      createdAt: new Date('2024-01-13'),
-      updatedAt: new Date('2024-01-13')
-    }
   ])
   const loading = ref(false)
   const filter = ref('all') // 'all', 'completed', 'pending'
